@@ -1,3 +1,4 @@
+//--------------------- GLOABAL VARIABLES------//
 // variable to hold randonly generated number by computer 
 var targetNum;
 
@@ -7,13 +8,13 @@ function resetTargetNum() {
     // Generete a random number 
     targetNum = Math.floor(Math.random() * ((120 - 19) + 1) + 19);
     // update the html document 
-    $("#targetNumHeading").text("arsalan");
+    $("#targetNumHeading").text(targetNum);
 }
 
 //------- initializing the page -------------//  
 document.body.onload = function () {
     resetTargetNum();
-} // End of page loading 
+}
 
 // event handler
 $(document).ready(function () {
