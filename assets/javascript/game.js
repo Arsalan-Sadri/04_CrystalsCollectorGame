@@ -3,7 +3,7 @@
 var targetNum;
 
 
-//------ function to choose and reset random number chosen by computer -------//
+//------ function to reset target number -------//
 function resetTargetNum() {
     // Generete a random number 
     targetNum = Math.floor(Math.random() * ((120 - 19) + 1) + 19);
@@ -11,10 +11,14 @@ function resetTargetNum() {
     $("#targetNumHeading").text(targetNum);
 }
 
+//------ function to reset crystals -------//
+function resetCrystals() {
+    
+}
 //------ function to initialize the game ---------------//
 function gameInit() {
     resetTargetNum();
-    
+    resetCrystals();
 
 }
 
