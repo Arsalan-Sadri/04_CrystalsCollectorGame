@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/CrystalBacgroundImage.png");
+    margin: 0;
+}
+
+.header {
+    color: white;
+    background: #E67E22;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 260px;
+}
+
+.note {
+    color: green;
+    background: rgb(252, 232, 197);
+    width: 410px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
+
+.header,
+.note,
+.randomBox,
+.scoreBox,
+.imgDiv,
+.totalScore,
+    {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.header,
+.note,
+.scoreDiv,
+.imgDiv,
+.totalScore {
+    margin: 10px;
+}
+
+.clearFix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.scoreDiv {
+    width: 300px;
+}
+
+.randomBox {
+    float: left;
+    width: 73%;
+    color: black;
+    background: rgb(19, 221, 19);
+    height: 100px;
+}
+
+.scoreBox {
+    float: left;
+    width: 23%;
+    background: aqua;
+    height: 100px;
+}
+
+.emptyBox {
+    float: left;
+    width: 4%;
+    padding: 1px;
+}
+
+#targetNumHeading {
+    margin: 0;
+}
+
+.imgDiv {
+    width: 400px;
+}
+
+.img-container {
+    float: left;
+    width: 25%;
+    padding: 5px;
+}
+
+img {
+    width: 100%;
+    height: 100px;
+}
+
+.totalScore {
+    background: rgb(45, 143, 45);
+    color: white;
+    width: 230px;
+}
+.scoreNo {
+    height: 150px;
+}
