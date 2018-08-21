@@ -1,9 +1,9 @@
-//--------------------- GLOABAL VARIABLES------//
+//--------------------- GLOABAL VARIABLES ---------------//
 // variable to hold randonly generated number by computer 
 var targetNum;
 
 
-//------ function to choose and reset random number chosen by computer------//
+//------ function to choose and reset random number chosen by computer -------//
 function resetTargetNum() {
     // Generete a random number 
     targetNum = Math.floor(Math.random() * ((120 - 19) + 1) + 19);
@@ -11,7 +11,15 @@ function resetTargetNum() {
     $("#targetNumHeading").text(targetNum);
 }
 
-//------- initializing the page -------------//  
+//------ function to initialize the game ---------------//
+function gameInit() {
+    resetTargetNum();
+    
+
+}
+
+
+//------- Page loading -------------//  
 document.body.onload = function () {
     resetTargetNum();
 }
